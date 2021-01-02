@@ -1,21 +1,21 @@
-# Notification Forwarder(For Azur Lane running on emulators)
+# Notification Forwarder(For Android emulators)
 
 A simple **toy** application that reads notifications from specified apps using the adb interface and display them on your PC desktop using pop-ups.
 
-Suitable for scenarios in which common notification syncing apps won't work due to NAT used by android emulators(e.g BlueStacks)
+Suitable for scenarios in which common notification syncing apps won't work due to NAT on android emulators(e.g BlueStacks)
 
 ## Install & Run
 
-### Install depencies
+### Install dependencies
 
 ```
-pip3 install -r requirements.txt
+pip install -r requirements.txt
 ```
 
 ### Run
 
 ```
-python3 server.py
+python server.py
 ```
 or 
 
@@ -26,11 +26,16 @@ server.exe
 
 ## Config
 
-Config the application in `config.ini`. 
+Config the application via `config.ini`. 
 
 
 ## License Information
 
-The project is released under the MIT license. See LICENSE.txt for full text of the license.
+The project is released under the MIT license. See LICENSE.txt for the license text.
 
-The project uses the following libraries
+The project uses the following libraries and includes compiled binaries of them in the released, prebuilt binaries:
+
+- [Plyer](https://github.com/kivy/plyer) fron kivy. plyer is released under the MIT license. The original license text is reproduced in `NOTICE.txt`
+
+- [adb_shell](https://github.com/JeffLIrion/adb_shell) from Jeff Irion. adb_shell is released under Apache 2.0 license. The original license text is reproduced in `NOTICE.txt`
+
